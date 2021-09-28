@@ -10,8 +10,12 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-
-    public function add(){
-    	echo "Hello"
+    public function adddata(){
+    	$data = 1;
+    	if($data == 3) {
+    		echo "Hello";
+    	} else {
+    		echo "Hello22";
+    	}
     }
 }
